@@ -5,6 +5,7 @@ import { RxDashboard } from "react-icons/rx";
 import { TbHelpTriangleFilled, TbTransactionPound } from "react-icons/tb";
 import { SlCalender } from "react-icons/sl";
 import { MdAccountCircle, MdOutlineSettings } from "react-icons/md";
+import { RiMenu2Fill } from "react-icons/ri";
 export default function HomePage() {
   return (
     <div className="h-screen w-screen overflow-auto">
@@ -12,12 +13,16 @@ export default function HomePage() {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* Page content here */}
-          <label
-            htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button lg:hidden"
-          >
-            Open drawer
-          </label>
+          <div className="navbar bg-base-100">
+            <label
+              htmlFor="my-drawer-2"
+              className="btn btn-ghost drawer-button lg:hidden"
+            >
+              <RiMenu2Fill className="text-2xl" />
+            </label>
+            <a className="btn btn-ghost text-xl">Dashboard</a>
+          </div>
+
           <Dashboard />
         </div>
         <div className="drawer-side">
