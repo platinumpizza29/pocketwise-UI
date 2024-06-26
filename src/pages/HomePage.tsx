@@ -8,7 +8,7 @@ import { MdAccountCircle, MdOutlineSettings } from "react-icons/md";
 import { RiMenu2Fill } from "react-icons/ri";
 export default function HomePage() {
   return (
-    <div className="h-screen w-screen overflow-auto">
+    <div className="h-screen bg-base-100 w-screen overflow-auto">
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
