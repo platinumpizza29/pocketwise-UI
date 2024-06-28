@@ -14,7 +14,7 @@ export default function LoginPage() {
 
   const { isPending, mutate } = useMutation({
     mutationFn: async () => {
-      const response = await axios.post("http://192.168.1.137:3000/login", {
+      const response = await axios.post("http://192.168.1.2:3000/login", {
         email,
         password,
       });
